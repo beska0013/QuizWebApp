@@ -1,0 +1,30 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+ul{
+  li{
+    list-style: none;
+  }
+}
+button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  &:active{
+    border-style: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+
+  &:active {
+    color: #000000;
+  }
+}
+html,body{height:100%;}

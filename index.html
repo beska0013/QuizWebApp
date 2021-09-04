@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+<header class="letters">
+    <a href="">
+    <span class="q">Q</span>
+    <span class="u">u</span>
+    <span class="i">i</span>
+    <span class="z">z</span>
+    </a>
+</header>
+
+
+<main>
+<section id="quizHeader" class="quiz-options">
+    <div class="category">
+        <button class="title options__fadeIn " id="categoryBtn"> choose category</button>
+        <ul id="categoryList">
+            <li id="anyCategory">
+                <p> Any Category</p>
+            </li>
+        </ul>
+    </div>
+    <div class="difficulty">
+        <button class="title options__fadeIn" id="difficultyBtn">choose difficulty</button>
+        <ul id="difficultyList">
+            <li id="anyDificulty">
+                <p>Any difficulty</p>
+            </li>
+            <li id="easy">
+                <p>easy</p>
+            </li>
+            <li id="medium">
+                <p>medium</p>
+            </li>
+            <li id="hard">
+                    <p>hard</p>
+               </li>
+        </ul>
+    </div>
+    <button class="btn-start title options__fadeIn" id="subBtn">click to start</button>
+</section>
+
+ <section class="quiz" id="quizBox"> <!-- Quiz Start    -->
+     <div class="question-contant" id="question"></div>
+     <div class="answers-contant" id="answers"></div>
+     <button class="nextBtn" id="next">next</button>
+ </section> <!-- Quiz End    -->
+    <div class="result" id="pointsResult">
+        <p>
+            You have earned
+            <span id="points"></span>
+            points
+        </p>
+        <div class="restart">
+        <p>
+            Would you like to <span id="restartBtn">Try again</span> ?
+        </p>
+        </div>
+    </div>
+</main>
+
+<!--<footer>-->
+<!--    <p class="signature"> Original code by Besik Gugushvili</p>-->
+<!--</footer>-->
+<script src="script.js"></script>
+</body>
+</html>

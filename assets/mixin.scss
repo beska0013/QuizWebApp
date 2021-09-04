@@ -1,0 +1,51 @@
+@mixin transition($name,$time){
+  transition: $name $time ease-in-out;
+}
+@mixin flex($spacing : none,$direction : row){
+  display:flex;
+  @if $direction == column{
+    flex-direction: column;
+  }
+  @if $direction == row{
+    flex-direction: row;
+  }
+  @if $spacing == between{
+    justify-content: space-between;
+  }
+  @else if $spacing == around{
+    justify-content: space-around;
+  }
+  @else if $spacing == center{
+    justify-content:center;
+  }
+  @else if $spacing == start{
+    justify-content:flex-start;
+  }
+  @else if $spacing == end{
+    justify-content:flex-end;
+  }
+  align-items:center;
+}
+
+
+@mixin size($height,$width) {
+  height: $height;
+  width: $width;
+}
+@mixin square($size){
+  width:$size;
+  height:$size;
+}
+
+@mixin font($name,$size,$weight,$color){
+  font-family:$name,sans-serif;
+  font-size:$size;
+  font-weight:$weight;
+  color:$color;
+}
+
+
+//////---VARIABLES---///////////////////
+$mainFont: 'Darker Grotesque';
+
+//////---VARIABLES---///////////////////

@@ -1,0 +1,36 @@
+
+@keyframes turnOn-Q {
+  to{
+    color: #FFFFFF;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.78);
+  }
+}
+@keyframes turnOn-U {
+  to{
+    color: #fd0000;
+    text-shadow: 0 0 20px rgb(255 0 0 / 80%);
+    -webkit-text-stroke: 1px #ff0000;
+  }
+}
+@keyframes turnOn-I{
+  to{
+    color: #0fe300;
+    text-shadow: 0 0 50px rgb(0 255 8 / 80%);
+    -webkit-text-stroke: 1px #00ff14;
+  }
+}
+@keyframes turnOn-Z{
+  to{
+    color: #b222d2;
+    text-shadow: 0 0 50px rgb(239 0 255);
+    -webkit-text-stroke: 1px #b222d2;
+  }
+}
+
+
+@keyframes fadeInOptions {
+  to{
+    opacity:1;
+    filter:blur(0px)
+  }
+}
